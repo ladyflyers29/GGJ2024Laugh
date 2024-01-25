@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
+[ImageEffectAllowedInSceneView]
 public class camerashiz : MonoBehaviour
 {
     public Material Mat;

@@ -1,4 +1,4 @@
-﻿Shader "UltraEffects/Outline"
+﻿Shader "UltraEffects/SketchOutline"
 {
     Properties
     {
@@ -102,7 +102,7 @@
 
 				float edgeDepth = sqrt(d0 * d0 + d1 * d1);
 				edgeDepth = edgeDepth > _DepthSensitivity ? _DepthStrength : 0;
-
+/*
 				float3 normal0 = tex2D(_CameraDepthNormalsTexture, leftUV).rgb;
 				float3 normal1 = tex2D(_CameraDepthNormalsTexture, rightUV).rgb;
 				float3 normal2 = tex2D(_CameraDepthNormalsTexture, bottomUV).rgb;
@@ -113,7 +113,7 @@
 
 				float edgeNormal = sqrt(dot(n0, n0) + dot(n1, n1));
 				edgeNormal = edgeNormal > _NormalsSensitivity ? _NormalsStrength : 0;
-
+*/
 				float edge = max(edgeCol, edgeDepth);//max(max(edgeCol, edgeDepth), edgeNormal);
 
 				float4 final = length(col * 0.5);

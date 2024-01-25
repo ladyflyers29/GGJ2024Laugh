@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
+[ImageEffectAllowedInSceneView]
 [RequireComponent(typeof(Camera))]
 public class ImageEffect : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class ImageEffect : MonoBehaviour
 
     private void Awake()
     {
-        effect.OnCreate();
+        effect?.OnCreate();
     }
 
     private void OnRenderImage(RenderTexture src, RenderTexture dst)
