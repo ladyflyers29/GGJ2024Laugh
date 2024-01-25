@@ -51,16 +51,24 @@
 			float _DepthStrength;
 			float _NormalsSensitivity;
 			float _NormalsStrength;
+
+			float _GrayscaleStrength;
+			float _PosterizeSteps;
+			float _WobbleRate;
+			float _WobbleAmount;
+			float _OutlineWidth;
 			sampler2D _Displace;
 
             float4 frag (v2f i) : SV_Target
             {
+				//////////////////////////////////////////////////////////////////
                 float4 col = tex2D(_MainTex, i.uv);
-				float wobble = floor(_Time.y * 6) * 0.1;
-				float4 displace = tex2D(_Displace, i.uv + wobble);
+				float noiseUVOffset = floor(_Time.y * _WobbleRate) * 0.1;
+				float4 displace = tex2D(_Displace, i.uv + noiseUVOffset);
 
-				float2 texsize = _MainTex_TexelSize.xy * 2;
-				texsize += (displace-0.5) * 0.01;
+				float2 texsize = _MainTex_TexelSize.xy * _OutlineWidth;
+				texsize += (displace-0.5) * _WobbleAmount;
+				//////////////////////////////////////////////////////////////////
 				float2 leftUV = i.uv + float2(-texsize.x, 0);
 				float2 rightUV = i.uv + float2(texsize.x, 0);
 				float2 bottomUV = i.uv + float2(0, -texsize.y);
@@ -71,20 +79,12 @@
 				float3 col2 = tex2D(_MainTex, bottomUV).rgb;
 				float3 col3 = tex2D(_MainTex, topUV).rgb;
 
-				float3 avg = (col0 + col1 + col2 + col3) / 4;
-				float3 outcol = (col.xyz - avg) + 1;
-				float outline = length(outcol * 0.6);
-				//return outline;
-				//return float4( col.xyz * outline, 0 );
-
 				float3 c0 = col1 - col0;
 				float3 c1 = col3 - col2;
 
 				float edgeCol = sqrt(dot(c0, c0) + dot(c1, c1));
 				edgeCol = edgeCol > _ColorSensitivity ? _ColorStrength : 0;
 
-				//float depthCenter = tex2D(_CameraDepthTexture, i.uv).r;
-				//depthCenter = Linear01Depth(depthCenter);
 
 				float depth0 = tex2D(_CameraDepthTexture, leftUV).r;
 				float depth1 = tex2D(_CameraDepthTexture, rightUV).r;
@@ -95,7 +95,6 @@
 				depth1 = Linear01Depth(depth1);
 				depth2 = Linear01Depth(depth2);
 				depth3 = Linear01Depth(depth3);
-				//float avgDepth = (depth0 + depth1 + depth2 + depth3) / 4;
 
 				float d0 = depth1 - depth0;
 				float d1 = depth3 - depth2;
@@ -116,10 +115,15 @@
 */
 				float edge = max(edgeCol, edgeDepth);//max(max(edgeCol, edgeDepth), edgeNormal);
 
-				float4 final = length(col * 0.5);
-				float steps = 16 + (displace.x * 0.1);
-				final = floor( final * steps) / steps;
-				//final = lerp(col, final, 0.8);
+				//////////////////////////////////////////////////////////////////
+				float4 final = col;
+				float grayscale = length(final * 0.5);
+				final = lerp(final, grayscale, _GrayscaleStrength);
+
+				float steps = _PosterizeSteps;
+				steps += (displace.x * 0.1); // add noise to posterize steps
+				final = floor(final * steps) / steps; // round color by posterize step amount
+				//////////////////////////////////////////////////////////////////
 
 				return final * (1.0f - edge);
             }

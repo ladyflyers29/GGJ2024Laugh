@@ -23,13 +23,21 @@ public class SketchOutlineEffect : BaseEffect
     [SerializeField]
     private float normalsStrength = 1.0f;
 
-    [SerializeField]
-    Texture2D displace;
+
+//////////////////////////////////////////////
+    [SerializeField] Texture2D displace;
+    [SerializeField,Range(0f,10f)] float    outlineWidth        = 2f;
+    [SerializeField,Range(0f,24f)] float    wobbleRate          = 6f;
+    [SerializeField,Range(0f,0.1f)] float   wobbleAmount        = 0.01f;
+    [SerializeField,Range(0f,1f)] float     grayscaleStrength   = 1f;
+    [SerializeField,Range(4,64)] int        posterizeSteps      = 16;
+
+
 
     // Find the Outline shader source.
     public override void OnCreate()
     {
-        baseMaterial = new Material(Resources.Load<Shader>("Shaders/Outline"));
+        baseMaterial = new Material(Resources.Load<Shader>("Shaders/SketchOutline"));
     }
 
     public override void Render(RenderTexture src, RenderTexture dst)
@@ -40,7 +48,13 @@ public class SketchOutlineEffect : BaseEffect
         baseMaterial.SetFloat("_DepthStrength", depthStrength);
         baseMaterial.SetFloat("_NormalsSensitivity", normalsSensitivity);
         baseMaterial.SetFloat("_NormalsStrength", normalsStrength);
+
         baseMaterial.SetTexture("_Displace", displace);
+        baseMaterial.SetFloat("_OutlineWidth"     , outlineWidth     );
+        baseMaterial.SetFloat("_WobbleRate"       , wobbleRate       );
+        baseMaterial.SetFloat("_WobbleAmount"     , wobbleAmount     );
+        baseMaterial.SetFloat("_GrayscaleStrength", grayscaleStrength);
+        baseMaterial.SetFloat("_PosterizeSteps"   , posterizeSteps   );
 
         Camera.main.depthTextureMode = DepthTextureMode.Depth;
         Graphics.Blit(src, dst, baseMaterial);
