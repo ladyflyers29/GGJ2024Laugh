@@ -11,6 +11,9 @@ TagManager:
   - Buff
   - Refresh
   - CanBeGrabbed
+  - Pie
+  - glue
+  - feathers
   layers:
   - Default
   - TransparentFX

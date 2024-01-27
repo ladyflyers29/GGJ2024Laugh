@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SketchOutlineShaneTest
   m_EditorClassIdentifier: Assembly-CSharp::SketchOutlineEffect
   colorSensitivity: 0.15
-  colorStrength: 0.46
+  colorStrength: 0.61
   depthSensitivity: 0.06
   depthStrength: 0.75
   normalsSensitivity: 0.1
@@ -22,5 +22,5 @@ MonoBehaviour:
   outlineWidth: 2
   wobbleRate: 3
   wobbleAmount: 0.01
-  grayscaleStrength: 0.863
+  grayscaleStrength: 0.86
   posterizeSteps: 16

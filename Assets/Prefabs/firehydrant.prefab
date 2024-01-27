@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8323397549128400009}
   - component: {fileID: 2909943162699777267}
   - component: {fileID: 4815789173920184764}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: firehydrant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6511640072877621042}
   - component: {fileID: 1360652570117686382}
   - component: {fileID: 1862155965173814575}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: telephonebox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

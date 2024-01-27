@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2085991521630940135
+--- !u!1 &6884193341044257555
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3875835730377192523}
-  - component: {fileID: 5147228330270162236}
-  m_Layer: 0
-  m_Name: ANNOUNCE
+  - component: {fileID: 2851998272414222005}
+  - component: {fileID: 7266393493689010176}
+  m_Layer: 14
+  m_Name: fart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &3875835730377192523
+  m_IsActive: 1
+--- !u!4 &2851998272414222005
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085991521630940135}
+  m_GameObject: {fileID: 6884193341044257555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,28 +32,28 @@ Transform:
   m_Father: {fileID: 6549835041504503171}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &5147228330270162236
+--- !u!82 &7266393493689010176
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085991521630940135}
+  m_GameObject: {fileID: 6884193341044257555}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 786d7103497037147bdfb71c6ce0ab97, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 3cd8ac5a7fe08a940bc30ac693e69551, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1.18
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 40
+  Priority: 78
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 20
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -88,7 +88,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -142,7 +142,8 @@ GameObject:
   - component: {fileID: 6549835041504503168}
   - component: {fileID: 6549835041504503169}
   - component: {fileID: 6549835041504503170}
-  m_Layer: 0
+  - component: {fileID: 2526410594604090628}
+  m_Layer: 14
   m_Name: grab1
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 0}
@@ -161,7 +162,7 @@ Transform:
   m_LocalScale: {x: -0.002002645, y: -0.002002645, z: -0.002002645}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3875835730377192523}
+  - {fileID: 2851998272414222005}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -257,3 +258,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2526410594604090628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7414756772856529611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3a3907c51981946adf7e5626009a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fart: {fileID: 7266393493689010176}

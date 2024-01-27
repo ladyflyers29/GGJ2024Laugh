@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3220469578028306472}
   - component: {fileID: 8077191187393379801}
   - component: {fileID: 7204570344508345465}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: trashbag
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 0}

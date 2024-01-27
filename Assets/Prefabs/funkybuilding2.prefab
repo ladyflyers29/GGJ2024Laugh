@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1869452991754238778}
   - component: {fileID: 4473577319362826224}
   - component: {fileID: 7777244658987099091}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: funkybuilding2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

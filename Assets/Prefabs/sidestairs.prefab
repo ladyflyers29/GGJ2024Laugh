@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1552018920136481220}
   - component: {fileID: 1404386905537500787}
   - component: {fileID: 7281622201033283856}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: sidestairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}

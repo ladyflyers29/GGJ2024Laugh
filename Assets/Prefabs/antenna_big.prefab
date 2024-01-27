@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5450876078662925760}
   - component: {fileID: 8336248543741953692}
   - component: {fileID: 2459333320854610722}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: antenna_big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
