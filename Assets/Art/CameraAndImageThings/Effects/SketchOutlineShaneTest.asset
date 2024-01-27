@@ -22,5 +22,5 @@ MonoBehaviour:
   outlineWidth: 2
   wobbleRate: 3
   wobbleAmount: 0.01
-  grayscaleStrength: 1
+  grayscaleStrength: 0.863
   posterizeSteps: 16
