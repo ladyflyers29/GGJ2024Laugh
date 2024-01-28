@@ -38,6 +38,7 @@ using UnityEditor;
 */
 
 public static class Extensions {
+    public static bool Contains(this LayerMask mask, int layer) => ((1<<layer) & mask) != 0;
     public static Vector3 VecTo(this Transform me, Vector3 goal) => goal - me.position;
     public static Vector3 VecTo(this Vector3 me, Vector3 goal) => goal - me;
     public static Diff DiffTo(this Vector3 me, Vector3 goal) => new(me, goal);

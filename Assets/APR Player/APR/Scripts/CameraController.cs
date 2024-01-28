@@ -33,7 +33,8 @@ public class CameraController : MonoBehaviour
     //Min & max camera angle
     public float minAngle = -45.0f;
     public float maxAngle = -10.0f;
-    
+
+    public float height = 2f;
     
     //Private variables
     private Camera cam;
@@ -42,6 +43,7 @@ public class CameraController : MonoBehaviour
     private Quaternion rotation;
     private Vector3 dir;
     private Vector3 offset;
+    Vector3 pivot;
 
 
     //Lock and hide cursor
@@ -53,6 +55,9 @@ public class CameraController : MonoBehaviour
         cam = Camera.main;
         
         offset = cam.transform.position;
+
+        if (GG.camera == null) GG.camera = this;
+        else Debug.LogError("MULTIPLE CAMERAS IN SCENE");
     }
 
 
@@ -73,8 +78,10 @@ public class CameraController : MonoBehaviour
         {
             dir = new Vector3(0, 0, -distance);
             rotation = Quaternion.Euler(-currentY, currentX, 0);
-            cam.transform.position = Vector3.Lerp (cam.transform.position, APRRoot.position + rotation * dir, smoothness);
+            pivot = Vector3.Lerp(cam.transform.position, APRRoot.position, smoothness);
+            cam.transform.position = pivot + (rotation * dir);
             cam.transform.LookAt(APRRoot.position);
+            cam.transform.position += (Vector3.up * height);
         }
         
         if(!rotateCamera)

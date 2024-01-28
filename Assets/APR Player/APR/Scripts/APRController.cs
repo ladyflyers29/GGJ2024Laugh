@@ -378,15 +378,17 @@ public class APRController : MonoBehaviour
     
     
     
+    public LayerMask groundLayers;
     //---Ground Check---//
     /////////////////////
 	void GroundCheck()
 	{
 		Ray ray = new Ray (APR_Parts[0].transform.position, -APR_Parts[0].transform.up);
 		RaycastHit hit;
+        bool rayhit = Physics.Raycast(ray, out hit, balanceHeight, groundLayers);
 		
 		//Balance when ground is detected
-        if (Physics.Raycast(ray, out hit, balanceHeight, 1 << LayerMask.NameToLayer("Ground")) && !inAir && !isJumping && !reachRightAxisUsed && !reachLeftAxisUsed)
+        if (rayhit && !inAir && !isJumping && !reachRightAxisUsed && !reachLeftAxisUsed)
         {
             if(!balanced && APR_Parts[0].GetComponent<Rigidbody>().velocity.magnitude < 1f)
             {
@@ -398,7 +400,7 @@ public class APRController : MonoBehaviour
 		}
 		
 		//Fall over when ground is not detected
-		else if(!Physics.Raycast(ray, out hit, balanceHeight, 1 << LayerMask.NameToLayer("Ground")))
+		else if(!rayhit)
 		{
             if(balanced)
             {
@@ -440,14 +442,14 @@ public class APRController : MonoBehaviour
 		if (COMP.position.z < APR_Parts[11].transform.position.z && COMP.position.z < APR_Parts[12].transform.position.z)
         {
             WalkBackward = true;
-            foamBackWalk.SetActive(true);
+            //foamBackWalk?.SetActive(true);
         }
         else
         {
 			if(!isKeyDown)
 			{
 				WalkBackward = false;
-                foamBackWalk.SetActive(false);
+                //foamBackWalk?.SetActive(false);
             }
         }
         
@@ -455,14 +457,14 @@ public class APRController : MonoBehaviour
         if (COMP.position.z > APR_Parts[11].transform.position.z && COMP.position.z > APR_Parts[12].transform.position.z)
         {
             WalkForward = true;
-            foamFrontWalk.SetActive(true);
+            //foamFrontWalk?.SetActive(true);
         }
         else
         {
             if(!isKeyDown)
 			{
 				WalkForward = false;
-                foamFrontWalk.SetActive(false);
+                //foamFrontWalk?.SetActive(false);
             }
         }
 	}

@@ -11,5 +11,6 @@ public class Citizen : MonoBehaviour {
         StandOnLadder = 3,
         HoldGlass = 4
     }
+    
 
 }
