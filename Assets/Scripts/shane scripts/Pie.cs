@@ -16,7 +16,7 @@ public class Pie : MonoBehaviour
             sound.Play();
             Instantiate(spawn, thisobject.transform.position, thisobject.transform.rotation);
             Destroy(thisobject);
-            //TODO apply a amount of points to the score board. the points should be different depending on where the npc is hit
+            GG.score += 500;
             //TODO destroy the pie object. Dont know if this is done here or in a script attached to the pie
 
         }

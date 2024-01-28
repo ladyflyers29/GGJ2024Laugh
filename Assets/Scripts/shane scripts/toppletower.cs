@@ -25,6 +25,7 @@ public class toppletower : MonoBehaviour
         {
             topple.Play();
             //TODO apply a amount of points to the score board. 
+            GG.score += 1200;
             Destroy(GetComponent<toppletower>());
         }
     }

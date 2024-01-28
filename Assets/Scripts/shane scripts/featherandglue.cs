@@ -18,6 +18,7 @@ public class featherandglue : MonoBehaviour
 
             gluesound.Play();
             isglued = true;
+            GG.score += 250;
             //TODO apply a small amount of points to the score board.
             //TODO destroy the glue object. Dont know if this is done here or in a script attached to the glue
 
@@ -26,6 +27,12 @@ public class featherandglue : MonoBehaviour
         else if (other.tag == "feathers")
         {
             feathersound.Play();
+            GG.score += 100;
+
+            if (isglued == true)
+            {
+                GG.score += 5500;
+            }
             //TODO apply a very slight amount of points to the score board.
             //TODO if isglued is true then increase the amount of points significantly
             //TODO destroy the feather object. Dont know if this is done here or in a script attached to the feathers

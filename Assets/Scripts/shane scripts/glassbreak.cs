@@ -13,6 +13,7 @@ public class glassbreak : MonoBehaviour
         if (other.tag == "Player")
         {
             //TODO apply an amount of points to the score board
+            GG.score += 1200;
             sound.Play();
             broken.SetActive(true);
             whole.SetActive(false);

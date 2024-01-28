@@ -37,6 +37,13 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+        if (other.tag == "Player")
+        {
+            GG.threat += 80;
+        }
+
+
         Destroy(gameObject);
 
         

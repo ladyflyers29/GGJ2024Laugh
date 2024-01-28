@@ -12,8 +12,7 @@ public class WhoopeeCushion : MonoBehaviour
         {
 
             fart.Play();
-            //TODO apply a small amount of points to the score board
-
+            GG.score += 50;
         }
     }
 }
