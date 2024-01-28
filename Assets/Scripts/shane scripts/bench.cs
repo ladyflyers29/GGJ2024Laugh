@@ -9,7 +9,7 @@ public class bench : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "NPC")
+        if (other.tag == "NPCO")
         {
 
             sound.Play();

@@ -15,6 +15,7 @@ TagManager:
   - glue
   - feathers
   - NPC
+  - NPCO
   layers:
   - Default
   - TransparentFX
