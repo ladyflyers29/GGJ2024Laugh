@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26198664, g: 0.60943335, b: 0.95844215, a: 1}
+  m_IndirectSpecularColor: {r: 0.2619867, g: 0.6094328, b: 0.95844156, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2486,6 +2486,7 @@ MonoBehaviour:
   - {fileID: 2053528217}
   - {fileID: 1990203562}
   speed: 6
+  smooth: 10
   predator: 0
 --- !u!65 &114179680
 BoxCollider:
@@ -9411,6 +9412,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
+      propertyPath: smooth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: target.Array.size
       value: 20
       objectReference: {fileID: 0}
@@ -11216,6 +11221,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
+      propertyPath: smooth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: target.Array.size
       value: 20
       objectReference: {fileID: 0}
@@ -12951,6 +12960,10 @@ PrefabInstance:
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: speed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
+      propertyPath: smooth
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: target.Array.size
@@ -21517,6 +21530,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
+      propertyPath: smooth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: target.Array.size
       value: 20
       objectReference: {fileID: 0}
@@ -22066,6 +22083,7 @@ MonoBehaviour:
   - {fileID: 2020241445}
   - {fileID: 793102077}
   speed: 6
+  smooth: 10
   predator: 0
 --- !u!65 &1059553219
 BoxCollider:
@@ -24584,6 +24602,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
+      propertyPath: smooth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: target.Array.size
       value: 20
       objectReference: {fileID: 0}
@@ -25656,6 +25678,7 @@ MonoBehaviour:
   - {fileID: 1245354953}
   - {fileID: 1739246973}
   speed: 6
+  smooth: 10
   predator: 0
 --- !u!65 &1226070420
 BoxCollider:
@@ -29478,6 +29501,10 @@ PrefabInstance:
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: speed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
+      propertyPath: smooth
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7123576727180297549, guid: f349744d207a3204b8914bcb99bb68cc, type: 3}
       propertyPath: target.Array.size
@@ -38546,6 +38573,7 @@ MonoBehaviour:
   - {fileID: 1952264580}
   - {fileID: 638649288}
   speed: 6
+  smooth: 10
   predator: 0
 --- !u!65 &1768240336
 BoxCollider:
@@ -44605,6 +44633,7 @@ MonoBehaviour:
   - {fileID: 1604327207}
   - {fileID: 1566702268}
   speed: 6
+  smooth: 10
   predator: 0
 --- !u!65 &2025110531
 BoxCollider:
@@ -49950,6 +49979,7 @@ MonoBehaviour:
   - {fileID: 63494943}
   - {fileID: 148563889}
   speed: 4
+  smooth: 10
   predator: 0
 --- !u!1 &6444261948413998776
 GameObject:

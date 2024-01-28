@@ -15,7 +15,7 @@ public class bench : MonoBehaviour
             sound.Play();
             GG.score += 900;
             //TODO apply a amount of points to the score board when the npc sitting on the bench hits the trigger box below it
-         
+            Destroy(gameObject);
 
         }
     }

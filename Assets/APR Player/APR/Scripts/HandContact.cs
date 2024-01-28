@@ -36,7 +36,8 @@ public class HandContact : MonoBehaviour
             {
                 if(hasJoint && Input.GetAxisRaw(APR_Player.reachLeft) == 0)
                 {
-                    this.gameObject.GetComponent<FixedJoint>().breakForce = 0;
+                    //this.gameObject.GetComponent<FixedJoint>().breakForce = 0;
+                    Destroy( this.gameObject.GetComponent<FixedJoint>() );
                     hasJoint = false;
                 }
 
@@ -52,7 +53,8 @@ public class HandContact : MonoBehaviour
             {
                 if(hasJoint && Input.GetAxisRaw(APR_Player.reachRight) == 0)
                 {
-                    this.gameObject.GetComponent<FixedJoint>().breakForce = 0;
+                    //this.gameObject.GetComponent<FixedJoint>().breakForce = 0;
+                    Destroy( this.gameObject.GetComponent<FixedJoint>() );
                     hasJoint = false;
                 }
 

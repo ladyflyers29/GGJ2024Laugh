@@ -17,7 +17,10 @@ public class GrabPickup : MonoBehaviour
     public GameObject feathers;
     public GameObject glue;
 
-    int rand = Random.Range(0, 4);
+    int rand;
+    void OnEnable() {
+        Random.Range(0, 4);
+    }
 
     private void OnTriggerStay(Collider other)
     {
