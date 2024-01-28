@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4421528945558980974}
   - component: {fileID: 4421528945558980975}
   - component: {fileID: 4421528945558980969}
-  - component: {fileID: 4421528945558980968}
   m_Layer: 14
   m_Name: ladder
   m_TagString: CanBeGrabbed
@@ -135,19 +134,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 53052681037c5424fb0201819c14e6d7, type: 3}
---- !u!65 &4421528945558980968
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123961275374492787}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.38701499, y: 0.14972548, z: 0.35733226}
-  m_Center: {x: 0.000017650427, y: 0.00004192814, z: -0.012646225}
 --- !u!1 &4426372634085409346
 GameObject:
   m_ObjectHideFlags: 0
