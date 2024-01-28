@@ -5099,6 +5099,7 @@ MonoBehaviour:
   spawn: {fileID: 7414756772856529611, guid: 3c1c8bd475491e948b99f57f333b8caa, type: 3}
   thisobject: {fileID: 9069835227755980507}
   sound: {fileID: 292606220915637110}
+  fullparent: {fileID: 9069835226615622137}
 --- !u!1 &9069835227697559611
 GameObject:
   m_ObjectHideFlags: 0

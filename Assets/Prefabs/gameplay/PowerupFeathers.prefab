@@ -80,6 +80,7 @@ MonoBehaviour:
   spawn: {fileID: 2648132179913797357, guid: b36fff2fc688bb942b1b9e5ddf39bbb5, type: 3}
   thisobject: {fileID: 8120820725925610201}
   sound: {fileID: 265861191447497273}
+  fullparent: {fileID: 1276309874059024327}
 --- !u!1 &2075163356787247131
 GameObject:
   m_ObjectHideFlags: 0

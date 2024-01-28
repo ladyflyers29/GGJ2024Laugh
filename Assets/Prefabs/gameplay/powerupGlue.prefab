@@ -14652,6 +14652,7 @@ MonoBehaviour:
   spawn: {fileID: 1974142052390306187, guid: b4631be3d7241344a9e862a67c07c8cb, type: 3}
   thisobject: {fileID: 2652730658211828801}
   sound: {fileID: 6040012842512359291}
+  fullparent: {fileID: 2652730659147731326}
 --- !u!65 &2652730659147731320
 BoxCollider:
   m_ObjectHideFlags: 0
