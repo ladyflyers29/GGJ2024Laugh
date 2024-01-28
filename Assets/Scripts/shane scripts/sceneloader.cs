@@ -11,8 +11,10 @@ public class sceneloader : MonoBehaviour
     {
        // player.SetActive(true);
        // music.SetActive(true);
-       
-        SceneManager.LoadScene(0);
+       if ( SceneManager.GetActiveScene().buildIndex == 0 ) {
+            GG.uiStuff.menu.SetActive(false);
+       }
+        else SceneManager.LoadScene(0);
     }
 
 }

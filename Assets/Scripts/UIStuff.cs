@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class UIStuff : MonoBehaviour {
 
+    public TextMeshProUGUI hiScoresList;
+
     public TextMeshProUGUI scoreText;
 
     public GameObject menu;
@@ -19,6 +21,8 @@ public class UIStuff : MonoBehaviour {
     public int mainLevelBuildIndex = 0;
 
     public int tutorialLevelBuildIndex = 1;
+
+    public bool isTutorial;
 
     void OnEnable() {
         if (GG.uiStuff == null) GG.uiStuff = this;

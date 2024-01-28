@@ -51,6 +51,7 @@ public static class GG {
 
     public static void GameOver() {
         uiStuff.gameOver.SetActive(true);
+        HiScore.SubmitScore();
     }
 
 
@@ -61,7 +62,7 @@ public static class GG {
         timeElapsed = 0;
         uiStuff.threatIndicator.gameObject.SetActive(true);
         uiStuff.gameOver.SetActive(false);
-        uiStuff.menu.SetActive(false);
+        uiStuff.menu.SetActive( uiStuff.isTutorial );
     }
 
 }
