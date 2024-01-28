@@ -63,8 +63,9 @@
             {
 				//////////////////////////////////////////////////////////////////
                 float4 col = tex2D(_MainTex, i.uv);
-				float noiseUVOffset = floor(_Time.y * _WobbleRate) * 0.1;
+				float noiseUVOffset = floor(_Time.y * _WobbleRate) * 0.2;
 				float4 displace = tex2D(_Displace, i.uv + noiseUVOffset);
+				displace = lerp(displace, 0.5, 0.5);
 
 				float2 texsize = _MainTex_TexelSize.xy * _OutlineWidth;
 				texsize += (displace-0.5) * _WobbleAmount;
