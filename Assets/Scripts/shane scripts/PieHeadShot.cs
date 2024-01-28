@@ -15,7 +15,7 @@ public class PieHeadShot : MonoBehaviour
 
             sound.Play();
             Instantiate(spawn, thisobject.transform.position, thisobject.transform.rotation);
-            Destroy(thisobject);
+            Destroy(other.transform.parent.gameObject);
             GG.score += 1500;
             //TODO destroy the pie object. Dont know if this is done here or in a script attached to the pie
 

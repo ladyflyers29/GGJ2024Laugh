@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23483234090758360
 Transform:
   m_ObjectHideFlags: 0
@@ -128,7 +128,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.008636935, y: -0.122253925, z: -0.57155263}
+  m_ConnectedAnchor: {x: -0.008654198, y: -0.122252315, z: -0.57155454}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -339,7 +339,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.07332419, y: 0.608571, z: -0.00000004614738}
+  m_ConnectedAnchor: {x: -0.07328223, y: 0.6085604, z: -0.0000010383161}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -443,7 +443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23483234487578591
 Transform:
   m_ObjectHideFlags: 0
@@ -551,7 +551,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0023903404, y: 0.09026813, z: -0.35036066}
+  m_ConnectedAnchor: {x: -0.0023951011, y: 0.090268716, z: -0.35036045}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -762,7 +762,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.07332419, y: 0.6085711, z: -0.00000041532647}
+  m_ConnectedAnchor: {x: -0.0732821, y: 0.60857856, z: -0.00000073835815}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -866,7 +866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23483234575152579
 Transform:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.07332419, y: 0.6085717, z: -0.000000024515796}
+  m_ConnectedAnchor: {x: -0.07328216, y: 0.60856855, z: 0.000010619666}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1077,7 +1077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23483234819988919
 Transform:
   m_ObjectHideFlags: 0
@@ -1185,7 +1185,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0023903497, y: 0.3797285, z: -0.16258058}
+  m_ConnectedAnchor: {x: -0.0023951011, y: 0.37972865, z: -0.16257963}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1396,7 +1396,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.07332419, y: 0.6085709, z: 0.0000002307369}
+  m_ConnectedAnchor: {x: -0.07328218, y: 0.60857284, z: -0.000006645223}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1607,7 +1607,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.07332419, y: 0.6085713, z: 0}
+  m_ConnectedAnchor: {x: -0.0732821, y: 0.60855764, z: -0.0000014767163}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1711,7 +1711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23483235115138354
 Transform:
   m_ObjectHideFlags: 0
@@ -1819,7 +1819,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0032989008, y: -0.20400675, z: -0.46388865}
+  m_ConnectedAnchor: {x: -0.0033054946, y: -0.20400618, z: -0.46388948}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2030,7 +2030,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.07332419, y: 0.6085709, z: 0}
+  m_ConnectedAnchor: {x: -0.073282115, y: 0.60856885, z: -0.00000406097}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2134,7 +2134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23483235439432900
 Transform:
   m_ObjectHideFlags: 0
@@ -2242,7 +2242,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0023903355, y: 0.47881818, z: 0.11140313}
+  m_ConnectedAnchor: {x: -0.0023951011, y: 0.47881824, z: 0.11140272}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2346,7 +2346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23483235765696560
 Transform:
   m_ObjectHideFlags: 0
@@ -2454,7 +2454,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0023903274, y: -0.33326575, z: -0.34954625}
+  m_ConnectedAnchor: {x: -0.0023951011, y: -0.3332656, z: -0.34954545}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3992,6 +3992,9 @@ MonoBehaviour:
   punchingRight: 0
   punchingLeft: 0
   editorDebugMode: 1
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &5735856558051926218
 GameObject:
   m_ObjectHideFlags: 0
@@ -5978,7 +5981,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69c44b95f8ad50d49b74605508a94083, type: 2}
+  - {fileID: 2100000, guid: 95bbd96ea4e3d473fba51a54ddcc3d1c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

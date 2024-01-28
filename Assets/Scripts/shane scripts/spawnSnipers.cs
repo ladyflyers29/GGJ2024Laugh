@@ -32,12 +32,12 @@ public class spawnSnipers : MonoBehaviour
             sniperset2.SetActive(true);
         }
 
-        if (GG.score >= 25000 && set3 == false)
+        if (GG.score >= 30000 && set3 == false)
         {
             sniperset3.SetActive(true);
         }
 
-        if (GG.score >= 30000 && set4 == false)
+        if (GG.score >= 35000 && set4 == false)
         {
             sniperset4.SetActive(true);
         }
