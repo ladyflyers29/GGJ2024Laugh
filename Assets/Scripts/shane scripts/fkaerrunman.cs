@@ -9,7 +9,7 @@ public class fkaerrunman : MonoBehaviour
       
 
        
-            GG.threat += 5 * Time.deltaTime;
+            GG.threat += 10 * Time.deltaTime;
 
         
     }

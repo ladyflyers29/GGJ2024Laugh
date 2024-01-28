@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8658450779983396952}
   - component: {fileID: 7752741293047423064}
   - component: {fileID: 4394183575165448463}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: lamp3
-  m_TagString: CanBeGrabbed
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
